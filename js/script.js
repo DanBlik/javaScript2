@@ -26,15 +26,19 @@ const renderGoodsItem = (title, price) => {
     <button class="buy" type="button">Купить</button>
     </div>`;
 };
+console.log(renderGoodsItem());
 
 const renderGoodsList = list => {
-    let goodsList = list.map(item => renderGoodsItem(item.title, item.price)).join('');
+    let goodsList = list.map(item => renderGoodsItem(item.title, item.price));
     document.querySelector('.goods-list').innerHTML = goodsList;
+    console.log(item);
+         console.log(item.title);
+         console.log(list);
 };
 
 renderGoodsList(goods);*/
 
-/*ES5 code*/
+//ES5 code
 var goods = [{
         title: 'Shirt',
         price: 150
@@ -65,16 +69,12 @@ var renderGoodsItem = function(title, price) {
 console.log(renderGoodsItem());
 
 function renderGoodsList(list) {
-    var goodsList = list.forEach(function(item){
-         renderGoodsItem(item.title, item.price);
-         console.log(item);
-         console.log(item.title);
-         console.log(list);
+    var goodsList = list.map(function(item){
+         return renderGoodsItem(item.title, item.price);
         });
-    document.querySelector('.goods-list').innerHTML = goodsList;
+    document.querySelector('.goods-list').innerHTML = goodsList.join('');
     console.log(goodsList);
 };
 
 renderGoodsList(goods);
 
-//*/ 
