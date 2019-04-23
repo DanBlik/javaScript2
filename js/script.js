@@ -58,12 +58,7 @@ var goods = [{
 ];
 
 var renderGoodsItem = function(title, price) {
-    return `<div class="goods-item">
-    <img src="./img/wear.jpg" alt="">
-    <h3>${title}</h3>
-    <p>${price}$</p>
-    <button class="buy" type="button">Купить</button>
-    </div>`;
+    return '<div class="goods-item"><img src="./img/wear.jpg" alt=""><h3>' + title + '</h3><p>' + price + '$</p><button class="buy" type="button">Купить</button></div>';
 };
 
 console.log(renderGoodsItem());
