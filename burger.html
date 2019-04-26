@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        p {
-            display: inline-block;
-        }
-    </style>
 </head>
 <body>
     <div class="main">
@@ -29,18 +24,19 @@
         <div class="sauce">
             <h3>Выберите соус (необязательно, но Шеф настаивает)</h3>
             <label class="sauceItem"><input type="checkbox" name="sauce" id="kurry">Карри</label>
-            <label class="sauceItem"><input type="checkbox" name="sauce" id="mayonnaise">Мазик</label>
+            <label class="sauceItem"><input type="checkbox" name="sauce" id="mayo">Мазик</label>
         </div>
 
         <hr>
-        <button class="ok">Собрать</button>
-        <h2 class="burgerSize">Ваш бургерос:</h2>
+        <button class="ok">Собрать бургерос!</button>
+        <h2 class="burgerSize">Ваш бургер:</h2>
         <h3 class="burgerComp">Начинка:</h3>
         <h3 class="burgerSauce">Соус:</h3>
 
         <hr>
-        <h3 class="sum">Sum:</h3>
-        <h3 class="callories">Callories:</h3>
+        <h3 id="price">Sum:</h3>
+        <h3 id="calories">Callories:</h3>
     </div>
+    <script src="burger.js"></script>
 </body>
 </html>
