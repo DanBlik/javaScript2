@@ -1,3 +1,6 @@
+body {
+    font-family: sans-serif;
+}
 header {
     width: 100%;
     height: 100px;
@@ -49,4 +52,10 @@ header .cart-button:hover {
 .buy:hover {
     background: rgb(185, 185, 185);
     color: rgb(61, 61, 61);
+}
+
+.sumBasket {
+    margin-top: 70px;
+    margin-right: 60px;
+    float: right;
 }
