@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="size">
+                <h3>Какого размера бургерос вам забацать?</h3>
+                <label class="sizeItem"><input type="radio" name="size" value="small" id="small" checked>Маленький</label>
+                <label class="sizeItem"><input type="radio" name="size" value="big" id="big">Большой</label> 
+        </div>
+
+        <div class="components">
+            <h3>Обязательно добавь начинку (минимум 1)!</h3>
+            <label class="componentsItem"><input type="checkbox" name="component" id="cheese" checked>Сыр</label>
+            <label class="componentsItem"><input type="checkbox" name="component" id="salat">Салат</label>
+            <label class="componentsItem"><input type="checkbox" name="component" id="potato">Картофель</label>
+        </div>
+
+        <div class="sauce">
+            <h3>Выберите соус (необязательно, но Шеф настаивает)</h3>
+            <label class="sauceItem"><input type="checkbox" name="sauce" id="kurry">Карри</label>
+            <label class="sauceItem"><input type="checkbox" name="sauce" id="mayo">Мазик</label>
+        </div>
+
+        <hr>
+        <button class="ok">Собрать бургерос!</button>
+        <h2 class="burgerSize">Ваш бургер:</h2>
+        <h3 class="burgerComp">Начинка:</h3>
+        <h3 class="burgerSauce">Соус:</h3>
+
+        <hr>
+        <h3 id="price">Sum:</h3>
+        <h3 id="calories">Callories:</h3>
+    </div>
+    <script src="burger.js"></script>
+</body>
+</html>
